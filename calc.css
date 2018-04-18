@@ -1,0 +1,138 @@
+body {
+  background: #7BCECC;
+}
+.box {
+  position: relative;
+  margin: auto;
+  width: 460px;
+  height: 640px;
+  background: #7BCECC;
+  z-index: 2;
+}
+.device {
+  position: absolute;
+  height: 98%;
+  width: 75%;
+  background: #5C5C5C;
+  background: linear-gradient(to right, #171717, #8B8B8B 40%, #171717 110%);
+  top: 1%;
+  left: 10%;
+  border-radius: 50px;
+  border: 3px solid black;
+}
+#camera {
+  position: absolute;
+  height: 13px;
+  width: 13px;
+  top: 5%;
+  left: 20%;
+  background: #8B8B8B;
+  border-radius: 50%;
+}
+#innerDot {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  top: 25%;
+  left: 25%;
+  background: black;
+  border-radius: 50%;
+}
+#speaker {
+  position: absolute;
+  height: 10px;
+  width: 25%;
+  top: 5%;
+  left: 37%;
+  background: red;
+  border-radius: 5px;
+  background: linear-gradient(#8B8B8B, #000);
+}
+.screen {
+  position: absolute;
+  height: 81%;
+  width: 90%;
+  background: #333343;
+  top: 10%;
+  left: 5%;
+}
+.btn_box {
+  position: absolute;
+  top: 25%;
+  left: 1%;
+  width: 98%;
+  height: 75%;
+}
+button {
+  height: 19%;
+  width: 24%;
+  border-radius: 15px;
+  margin-bottom: 1%;
+  border-style: none;
+  outline: none;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+button#clear, #b0 {
+  width: 49%;
+}
+button:active {
+  background: #7BCECC;
+}
+#display {
+  position: absolute;
+  top: 5%;
+  left: 1%;
+  width: 97%;
+  height: 13%;
+  outline: none;
+  border: none;
+  background: #333343;
+}
+input {
+  color:  white;
+}
+#gith {
+  position: absolute;
+  left: 45%;
+  top: 93%;
+}
+.powerBtn {
+  position: absolute;
+  height: 6%;
+  width: 1.4%;
+  top: 13%;
+  left: 85.6%;
+  background: black;
+  border-radius: 4px;
+}
+.volumeBtn {
+  position: absolute;
+  height: 16%;
+  width: 1.4%;
+  top: 23%;
+  left: 85.6%;
+  background: black;
+  border-radius: 4px;
+}
+.orange {
+  background: #E7B000;
+  color: white;
+}
+.greyBtn {
+  background: #6B6B6B;
+  color: white;
+}
+.lightGrey {
+  background: #AAAAAA;
+}
+#battery {
+  position: absolute;
+  top: 1%;
+  left: 69%;
+}
+.topMenu {
+  font-family: sans-serif;
+  font-size: 13px;
+}

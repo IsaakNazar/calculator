@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500" rel="stylesheet">
+  </head>
+  <body>
+    <div class="box">
+
+      <div class="device">
+
+        <div id="camera">
+          <div id="innerDot"></div>
+        </div>
+        <div id="speaker"></div>
+        <div class="screen">
+          <div style="color: #D4D4D4;" id="battery">
+
+            <i class="fas fa-signal"></i>
+            <span id="newBattery" class="topMenu"></span>
+            <span class="topMenu" id="localTime"></span>
+          </div>
+
+          <form>
+            <input  type="text" id="display" style="color: #B7E4E3; text-align: right; font-size: 35px; font-family: 'Nanum Gothic', sans-serif;">
+          </form>
+          <div class="btn_box">
+            <button  value="/" class="operators orange" onclick="operate('/')">÷</button>
+
+            <button id="clear" class="lightGrey" value="C"  onclick="clearByOne()"><i class="fas fa-long-arrow-alt-left"></i></button>
+            <button id="clearAll" class="lightGrey" value="AC" onclick="clearAll()">AC</button><br>
+
+            <button  value="*" class="operators orange" onclick="operate('*')">×</button>
+            <button id="b7" value="7" class="greyBtn" onclick="onDisplay('7')">7</button>
+            <button id="b8" value="8" class="greyBtn" onclick="onDisplay('8')">8</button>
+            <button id="b9" value="9" class="greyBtn" onclick="onDisplay('9')">9</button><br>
+
+            <button id="plus" value="+" class="operators orange" onclick="operate('+')">+</button>
+            <button id="b4" value="4" class="greyBtn" onclick="onDisplay('4')">4</button>
+            <button id="b5" value="5" class="greyBtn" onclick="onDisplay('5')">5</button>
+            <button id="b6" value="6" class="greyBtn" onclick="onDisplay('6')">6</button><br>
+
+            <button id="minus" value="-" class="operators orange" onclick="operate('-')">-</button>
+            <button id="b1" value="1" class="greyBtn" onclick="onDisplay('1')">1</button>
+            <button id="b2" value="2" class="greyBtn" onclick="onDisplay('2')">2</button>
+            <button id="b3" value="3" class="greyBtn" onclick="onDisplay('3')">3</button><br>
+
+            <button id="equal" class="orange" value="=" onclick="calculate()">=</button>
+            <button id="point" value="." class="greyBtn" onclick="dot()">.</button>
+            <button id="b0" value="0" class="greyBtn" onclick="onDisplay('0')">0</button>
+          </div>
+
+        </div>
+        <div id="gith">
+          <a style="color: black;" href="https://github.com/IsaakNazar"  target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+      </div>
+      <div class="powerBtn">
+      </div>
+      <div class="volumeBtn">
+      </div>
+    </div>
+
+
+    <script src="calc.js"></script>
+  </body>
+</html>
